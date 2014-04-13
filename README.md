@@ -6,7 +6,7 @@ Offers tools and helpers to migrate between breaking changes introduced by diffe
 
 Fetches player UUIDs in bulk.
 
-by evilmidget38 [http://forums.bukkit.org/threads/player-name-uuid-fetcher.250926/](original post)
+by evilmidget38 [original post](http://forums.bukkit.org/threads/player-name-uuid-fetcher.250926/)
 
 ### Usage
 
@@ -34,6 +34,6 @@ you should not ever do this.
 Offers a cache for player name-UUID mappings that can be used from plugins running on older versions of Bukkit (pre-1.7.5)
 which do not yet support player name conversion directly.
 
-by James Crasta [https://github.com/crast/CrastBukkitUtils/blob/master/base/src/main/java/us/crast/bukkituuid/UUIDCache.java](original source)
+by James Crasta [original source](https://github.com/crast/CrastBukkitUtils/blob/master/base/src/main/java/us/crast/bukkituuid/UUIDCache.java)
 
 Please refer to source/JavaDoc for usage.
