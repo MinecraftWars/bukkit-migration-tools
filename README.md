@@ -2,21 +2,21 @@
 
 Offers tools and helpers to migrate between breaking changes introduced by different versions of Bukkit/CraftBukkit
 
-## UUIDFetcher
+## UUIDFetcher, NameFetcher
 
-Fetches player UUIDs in bulk.
+Fetches player UUIDs or names in bulk.
 
 by evilmidget38 [(original post)](http://forums.bukkit.org/threads/player-name-uuid-fetcher.250926/)
 
 ### Usage
 
-Using UUIDFetcher is fairly simple. First, you need to instantiate a UUIDFetcher with a List of names to retrieve the UUID for.
+Using `UUIDFetcher` is fairly simple. First, you need to instantiate a UUIDFetcher with a List of names to retrieve the UUID for.
 
     UUIDFetcher fetcher = new UUIDFetcher(Arrays.asList("evilmidget38", "mbaxter"));
 
-Once you've created your UUIDFetcher, all that's left is to actually run it.
+Once you've created your `UUIDFetcher`, all that's left is to actually run it.
 
-If you'd like to run your UUIDFetcher on the thread that you're currently on, simply invoke the method "call",
+If you'd like to run your `UUIDFetcher` on the thread that you're currently on, simply invoke the method "call",
 as shown below. Note that if you're currently on the main thread(inside of an EventHandler or scheduled task),
 you should not ever do this.
 
@@ -27,6 +27,8 @@ you should not ever do this.
         getLogger().warning("Exception while running UUIDFetcher");
         e.printStacktrace();
     }
+    
+`NameFetcher` works analogously to `UUIDFetcher`.
 
 
 ## UUIDCache
